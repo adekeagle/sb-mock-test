@@ -20,4 +20,9 @@ public class AnimalController {
     public List<Animal> getAllAnimals(){
         return animalService.getAnimals();
     }
+
+    public Animal addAnimal(Animal animal){
+        animalService.add(animal);
+        return animal;
+    }
 }
